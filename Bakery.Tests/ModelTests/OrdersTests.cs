@@ -9,7 +9,7 @@ namespace Bakery.Tests
   public class BreadTests
   {
     [TestMethod]
-    public static void Bread_CheckPrice_1()
+    public void Bread_CheckPrice_1()
     {
       Bread orderBread = new Bread();
       orderBread.BreadPrice = 1;
