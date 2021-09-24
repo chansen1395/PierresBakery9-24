@@ -32,6 +32,14 @@ namespace Bakery.Tests
       Assert.AreEqual(10, orderBread.BreadQuantity);
     }
 
+    [TestMethod]
+    public void Bread_PriceCalc_15()
+    {
+      Bread orderBread = new Bread();
+      orderBread.BreadQuantity = 4;
+      Assert.AreEqual(15, orderBread.BreadQuantity);
+    }
+
   }
 
   [TestClass]
