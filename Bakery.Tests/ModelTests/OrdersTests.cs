@@ -18,6 +18,19 @@ namespace Bakery.Tests
 
   }
 
+  [TestClass]
+  public class PastryTests
+  {
+    [TestMethod]
+    public void Pastry_CheckPrice_1()
+    {
+      Pastry orderPastry = new Pastry();
+      orderPastry.PastryPrice = 1;
+      Assert.AreEqual(1, orderPastry.PastryPrice);
+    }
+
+  }
+
   // [TestClass]
   // public class PastryTests
   // {
