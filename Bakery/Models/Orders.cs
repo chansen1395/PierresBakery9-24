@@ -14,10 +14,16 @@ namespace Bakery.Models
       // get { return _breadPrice; }
       get 
       { 
-        _breadPrice = _breadQuantity * 5;
-        if (_breadQuantity == 3)
+        _breadPrice = 0;
+        // _breadPrice = _breadQuantity * 5;
+        // Console.WriteLine(_breadQuantity);
+        for (int i = 1; i <= _breadQuantity; i++)
         {
-          _breadPrice -= 5;
+          if (i % 3 != 0)
+          {
+            _breadPrice += 5;
+            // Console.WriteLine(_breadPrice);
+          }
         }
         return _breadPrice;
       }
