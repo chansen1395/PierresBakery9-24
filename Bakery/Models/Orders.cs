@@ -53,22 +53,5 @@ namespace Bakery.Models
       }
       set { _pastryQuantity = value; }
     }
-    
   }
-
-  // public class Pastry
-  // {
-  //   private int _pastryPrice;
-
-  //   public int PastryPrice 
-  //   {
-  //     get { return _pastryPrice; }
-  //     // get 
-  //     // { 
-  //     //   if   
-  //     // }
-  //     set { _pastryPrice = value; }
-  //   }
-    
-  // }
 }

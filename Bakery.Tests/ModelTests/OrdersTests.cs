@@ -76,17 +76,5 @@ namespace Bakery.Tests
       orderPastry.PastryQuantity = 6;
       Assert.AreEqual(10, orderPastry.PastryQuantity);
     }
-
   }
-
-  // [TestClass]
-  // public class PastryTests
-  // {
-  //   [TestMethod]
-  //   public void CheckWinner_CheckDraw_Draw()
-  //   {
-  //     Assert.AreEqual("Draw", Game.CheckWinner("rock", "rock"));
-  //   }
-
-  // }
 }
