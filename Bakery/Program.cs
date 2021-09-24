@@ -21,9 +21,9 @@ namespace Bakery
       Console.WriteLine("Every 3rd Pastry is $1");
       Console.WriteLine("***************************");
       Console.WriteLine("Enter the quantity of Bread you would like to purchase:");
-      int breadQuant = Console.ReadLine();
+      int breadQuant = Int32.Parse(Console.ReadLine());
       Console.WriteLine("Enter the quantity of Pastries you would like to purchase:");
-      int pastryQuant = Console.ReadLine();
+      int pastryQuant = Int32.Parse(Console.ReadLine());
 
       Bread orderBread = new Bread();
       Pastry orderPastry = new Pastry();
