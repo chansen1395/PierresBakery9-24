@@ -15,6 +15,10 @@ namespace Bakery.Models
       get 
       { 
         _breadPrice = _breadQuantity * 5;
+        if (_breadQuantity == 3)
+        {
+          _breadPrice -= 5;
+        }
         return _breadPrice;
       }
       set { _breadQuantity = value; }

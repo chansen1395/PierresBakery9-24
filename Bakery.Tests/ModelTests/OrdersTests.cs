@@ -17,11 +17,19 @@ namespace Bakery.Tests
     // }
 
     [TestMethod]
-    public void Bread_PriceCalc_1()
+    public void Bread_PriceCalc_5()
     {
       Bread orderBread = new Bread();
       orderBread.BreadQuantity = 1;
       Assert.AreEqual(5, orderBread.BreadQuantity);
+    }
+
+    [TestMethod]
+    public void Bread_PriceCalc_10()
+    {
+      Bread orderBread = new Bread();
+      orderBread.BreadQuantity = 3;
+      Assert.AreEqual(10, orderBread.BreadQuantity);
     }
 
   }
