@@ -6,33 +6,26 @@ using System;
 namespace Bakery.Tests
 {
   [TestClass]
-  public class GameTests
+  public class BreadTests
   {
     [TestMethod]
-    public void CheckWinner_CheckDraw_Draw()
+    public static void Bread_CheckPrice_1()
     {
-      Assert.AreEqual("Draw", Game.CheckWinner("rock", "rock"));
+      Bread orderBread = new Bread();
+      orderBread.BreadPrice = 1;
+      Assert.AreEqual(1, orderBread.BreadPrice);
     }
-    
-    [TestMethod]
-    public void CheckWinner_Choice1BeatsChoice2_Player1()
-    {
-      Assert.AreEqual("Player 1", Game.CheckWinner("rock", "scissors"));
-      Assert.AreEqual("Player 1", Game.CheckWinner("scissors", "paper"));
-      Assert.AreEqual("Player 1", Game.CheckWinner("paper", "rock"));
-    }
-    [TestMethod]
-    public void CheckWinner_Choice2BeatsChoice1_Player2()
-    {
-      Assert.AreEqual("Player 2", Game.CheckWinner("paper", "scissors"));
-      Assert.AreEqual("Player 2", Game.CheckWinner("scissors", "rock"));
-      Assert.AreEqual("Player 2", Game.CheckWinner("rock", "paper"));
-    }
-    
-    [TestMethod]
-    public void CPUPlayer_ReturnsNumber_String()
-    {
-      Assert.IsTrue(Game.CPUPlayer() == "rock" || Game.CPUPlayer() == "scissors" || Game.CPUPlayer() == "paper");
-    }
+
   }
+
+  // [TestClass]
+  // public class PastryTests
+  // {
+  //   [TestMethod]
+  //   public void CheckWinner_CheckDraw_Draw()
+  //   {
+  //     Assert.AreEqual("Draw", Game.CheckWinner("rock", "rock"));
+  //   }
+
+  // }
 }
