@@ -12,7 +12,7 @@
 
 ## Description
 
-_This application will ask the user the quantity of Bread and Pastries they would like to purchase. For every 3rd loaf of Bread ordered, that 3rd loaf is free. For every 3rd Pastry ordered, that 3rd Pastry is half price. The application will display the subtotals for each type as well as a grand total._
+_This application will ask the user the quantity of Bread and Pastries they would like to purchase. For every 3rd loaf of Bread ordered, that 3rd loaf is free. For every 3rd Pastry ordered, that 3rd Pastry is half price. The application will display the subtotals for each type as well as a grand total. Non-positive integers are the only accepted input types._
 
 ## Setup/Installation Requirements
 
@@ -35,7 +35,8 @@ _This application will ask the user the quantity of Bread and Pastries they woul
 
 ## Known Bugs
 
-* _No known bugs_
+* _Unsure of convention whether error handling is dealt with in Main() or not._
+* _No known application-breaking bugs_
 
 ## License
 

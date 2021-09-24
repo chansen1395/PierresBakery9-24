@@ -15,7 +15,7 @@ namespace UI.Models
         int breadQuant = Int32.Parse(breadQuantString);
         if (breadQuant < 0)
         {
-          Console.WriteLine("!!! ERROR !!! Please enter a POSITIVE number and try again.");
+          Console.WriteLine("!!! ERROR !!! Please enter a POSITIVE integer and try again.");
           return BreadOrderUI();
         } 
         else 
@@ -25,7 +25,7 @@ namespace UI.Models
       }
       catch (System.Exception)
       {
-        Console.WriteLine("!!! ERROR !!! Please enter a number and try again.");
+        Console.WriteLine("!!! ERROR !!! Please enter an integer and try again.");
         return BreadOrderUI();
       }
     }
@@ -40,7 +40,7 @@ namespace UI.Models
         int pastryQuant = Int32.Parse(pastryQuantString);
         if (pastryQuant < 0)
         {
-          Console.WriteLine("!!! ERROR !!! Please enter a POSITIVE number and try again.");
+          Console.WriteLine("!!! ERROR !!! Please enter a POSITIVE integer and try again.");
           return PastryOrderUI();
         } 
         else 
@@ -50,7 +50,7 @@ namespace UI.Models
       }
       catch (System.Exception)
       {
-        Console.WriteLine("!!! ERROR !!! Please enter a number and try again.");
+        Console.WriteLine("!!! ERROR !!! Please enter an integer and try again.");
         return PastryOrderUI();
       }
     }
