@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 
-
 namespace Bakery.Models
 {
   public class Bread
@@ -9,6 +8,7 @@ namespace Bakery.Models
     private int _breadPrice;
     private int _breadQuantity;
 
+    // Determine Bread price, every 3rd loaf is free
     public int BreadOrder
     {
       get 
@@ -32,6 +32,7 @@ namespace Bakery.Models
     private int _pastryPrice;
     private int _pastryQuantity;
 
+    // Determine Pastry price, every 3rd Pastry is $1
     public int PastryOrder
     {
       get 

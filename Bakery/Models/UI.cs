@@ -7,6 +7,7 @@ namespace UI.Models
   {
     public static int BreadOrderUI()
     {
+      // Handle user input errors for Bread, repeat prompt until input is accepted
       Console.WriteLine("Enter the quantity of Bread you would like to purchase:");
       string breadQuantString = Console.ReadLine();
       try
@@ -31,6 +32,7 @@ namespace UI.Models
 
     public static int PastryOrderUI()
     {
+      // Handle user input errors for Pastry, repeat prompt until input is accepted
       Console.WriteLine("Enter the quantity of Pastries you would like to purchase:");
       string pastryQuantString = Console.ReadLine();
       try
