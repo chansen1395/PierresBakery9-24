@@ -7,19 +7,32 @@ namespace Bakery.Models
   public class Bread
   {
     private int _breadPrice;
-    
+
     public int BreadPrice 
     {
       get { return _breadPrice; }
+      // get 
+      // { 
+      //   if   
+      // }
       set { _breadPrice = value; }
     }
     
   }
-  // public class Pastry
-  // {
-  //   private int _pastryPrice;
-  //   public int PastryPrice {
-  //     get {return _pastryPrice;}
 
-  //   }
+  public class Pastry
+  {
+    private int _pastryPrice;
+
+    public int PastryPrice 
+    {
+      get { return _pastryPrice; }
+      // get 
+      // { 
+      //   if   
+      // }
+      set { _pastryPrice = value; }
+    }
+    
+  }
 }
