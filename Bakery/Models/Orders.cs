@@ -25,7 +25,6 @@ namespace Bakery.Models
       }
       set { _breadQuantity = value; }
     }
-    
   }
 
   public class Pastry

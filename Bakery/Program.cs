@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Bakery.Models;
-
+using UI.Models;
 
 namespace Bakery
 {
@@ -20,21 +20,18 @@ namespace Bakery
       Console.WriteLine("Every 3rd Loaf of Bread is free");
       Console.WriteLine("Every 3rd Pastry is $1");
       Console.WriteLine("***************************");
-      Console.WriteLine("Enter the quantity of Bread you would like to purchase:");
-      int breadQuant = Int32.Parse(Console.ReadLine());
-      Console.WriteLine("Enter the quantity of Pastries you would like to purchase:");
-      int pastryQuant = Int32.Parse(Console.ReadLine());
+      int breadQuant = OrdersUI.BreadOrderUI();
+      int pastryQuant = OrdersUI.PastryOrderUI();
 
       Bread orderBread = new Bread();
       Pastry orderPastry = new Pastry();
       orderBread.BreadOrder = breadQuant;
       orderPastry.PastryOrder = pastryQuant;
 
-      // int grandTotal = orderBread.BreadOrder + orderPastry.PastryOrder;
       Console.WriteLine("***************************");
       Console.WriteLine("Bread Subtotal ----- $" + orderBread.BreadOrder);
       Console.WriteLine("Pastry Subtotal ---- $" + orderPastry.PastryOrder);
-      Console.WriteLine("Grand total -------- $" + (orderBread.BreadOrder + orderPastry.PastryOrder));
+      Console.WriteLine("GRAND TOTAL -------- $" + (orderBread.BreadOrder + orderPastry.PastryOrder));
     }
   }
 }
