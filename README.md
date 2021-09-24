@@ -1,30 +1,36 @@
-# Rock Paper Scissors
+# Pierre's Bakery
 
-#### This console application will play a game of rock, paper, scissors in two player or computer mode.
+#### This console application allows a user to submit an order for Bread and Pastries, and will calculate the cost.
 
-#### By Connor Hansen and Anna Clarke
+#### By Connor Hansen
 
 ## Technologies Used
 
 * C#
-* .Net
+* .NET
 * MStest
 
 ## Description
 
-_This application will ask the user if they would like to play against a computer or with another player. If they choose computer mode, the computer will choose randomly and play rock, paper scissors with the user. If the user chooses two player mode, the application will ask each player for a choice and play a game of rock, paper, scissors. It will display the winner or draw in the console._
+_This application will ask the user the quantity of Bread and Pastries they would like to purchase. For every 3rd loaf of Bread ordered, that 3rd loaf is free. For every 3rd Pastry ordered, that 3rd Pastry is half price. The application will display the subtotals for each type as well as a grand total._
 
 ## Setup/Installation Requirements
 
-- _To clone and run from [GitHub Repo](https://github.com/chansen1395/Rock-Paper-Scissors-9-22):_
+- _To clone and run from [GitHub Repo](https://github.com/chansen1395/PierresBakery9-24):_
 
-- _Use a program such as VSCode to view and run the program._
+- _Use a program such as VSCode to view, run, and test the program._
+  
+- _In order to test the program using MStest:_
   - _In bash at a folder of your choice, type the following:_
-    - $ git clone https://github.com/chansen1395/Rock-Paper-Scissors-9-22
-    - $ code .
-    - $ cd RPS
-    - $ dotnet run
-  - _Follow console prompts to select computer or 2-player options._
+    1. $ git clone https://github.com/chansen1395/PierresBakery9-24
+    2. $ code .
+    3. $ cd Bakery.Tests
+    4. $ dotnet restore
+    5. $ dotnet test
+- _In order to run the program, follow along with the previous steps. After step 4, navigate to the Bakery directory:_
+    1. $ cd ../Bakery
+    2. $ dotnet run
+    3. _Follow console prompts to input the quantity of Bread and Pastries to order._
 
 
 ## Known Bugs
@@ -37,6 +43,5 @@ _This application will ask the user if they would like to play against a compute
 
 ## Contact Information
 
-- Anna Clarke: _{<anclarkie@gmail.com>}_
 - Connor Hansen: _{<chansen13@georgefox.edu>}_
-- _{[GitHub Repo - main](https://github.com/chansen1395/Rock-Paper-Scissors-9-22)}_
+- _{[GitHub Repo - main](https://github.com/chansen1395/PierresBakery9-24)}_

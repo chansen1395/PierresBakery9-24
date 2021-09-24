@@ -27,14 +27,14 @@ namespace Bakery
 
       Bread orderBread = new Bread();
       Pastry orderPastry = new Pastry();
-      orderBread.BreadQuantity = breadQuant;
-      orderPastry.PastryQuantity = pastryQuant;
+      orderBread.BreadOrder = breadQuant;
+      orderPastry.PastryOrder = pastryQuant;
 
-      // int grandTotal = orderBread.BreadQuantity + orderPastry.PastryQuantity;
+      // int grandTotal = orderBread.BreadOrder + orderPastry.PastryOrder;
       Console.WriteLine("***************************");
-      Console.WriteLine("Bread Subtotal ----- $" + orderBread.BreadQuantity);
-      Console.WriteLine("Pastry Subtotal ---- $" + orderPastry.PastryQuantity);
-      Console.WriteLine("Grand total -------- $" + (orderBread.BreadQuantity + orderPastry.PastryQuantity));
+      Console.WriteLine("Bread Subtotal ----- $" + orderBread.BreadOrder);
+      Console.WriteLine("Pastry Subtotal ---- $" + orderPastry.PastryOrder);
+      Console.WriteLine("Grand total -------- $" + (orderBread.BreadOrder + orderPastry.PastryOrder));
     }
   }
 }

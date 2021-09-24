@@ -20,24 +20,24 @@ namespace Bakery.Tests
     public void Bread_PriceCalc_5()
     {
       Bread orderBread = new Bread();
-      orderBread.BreadQuantity = 1;
-      Assert.AreEqual(5, orderBread.BreadQuantity);
+      orderBread.BreadOrder = 1;
+      Assert.AreEqual(5, orderBread.BreadOrder);
     }
 
     [TestMethod]
     public void Bread_PriceCalc_10()
     {
       Bread orderBread = new Bread();
-      orderBread.BreadQuantity = 3;
-      Assert.AreEqual(10, orderBread.BreadQuantity);
+      orderBread.BreadOrder = 3;
+      Assert.AreEqual(10, orderBread.BreadOrder);
     }
 
     [TestMethod]
     public void Bread_PriceCalc_15()
     {
       Bread orderBread = new Bread();
-      orderBread.BreadQuantity = 4;
-      Assert.AreEqual(15, orderBread.BreadQuantity);
+      orderBread.BreadOrder = 4;
+      Assert.AreEqual(15, orderBread.BreadOrder);
     }
 
   }
@@ -45,36 +45,29 @@ namespace Bakery.Tests
   [TestClass]
   public class PastryTests
   {
-    // [TestMethod]
-    // public void Pastry_CheckPrice_1()
-    // {
-    //   Pastry orderPastry = new Pastry();
-    //   orderPastry.PastryPrice = 1;
-    //   Assert.AreEqual(1, orderPastry.PastryPrice);
-    // }
 
     [TestMethod]
     public void Pastry_PriceCalc_2()
     {
       Pastry orderPastry = new Pastry();
-      orderPastry.PastryQuantity = 1;
-      Assert.AreEqual(2, orderPastry.PastryQuantity);
+      orderPastry.PastryOrder = 1;
+      Assert.AreEqual(2, orderPastry.PastryOrder);
     }
 
     [TestMethod]
     public void Pastry_PriceCalc_5()
     {
       Pastry orderPastry = new Pastry();
-      orderPastry.PastryQuantity = 3;
-      Assert.AreEqual(5, orderPastry.PastryQuantity);
+      orderPastry.PastryOrder = 3;
+      Assert.AreEqual(5, orderPastry.PastryOrder);
     }
 
     [TestMethod]
     public void Pastry_PriceCalc_10()
     {
       Pastry orderPastry = new Pastry();
-      orderPastry.PastryQuantity = 6;
-      Assert.AreEqual(10, orderPastry.PastryQuantity);
+      orderPastry.PastryOrder = 6;
+      Assert.AreEqual(10, orderPastry.PastryOrder);
     }
   }
 }

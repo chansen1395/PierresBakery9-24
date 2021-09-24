@@ -9,7 +9,7 @@ namespace Bakery.Models
     private int _breadPrice;
     private int _breadQuantity;
 
-    public int BreadQuantity 
+    public int BreadOrder
     {
       get 
       { 
@@ -33,7 +33,7 @@ namespace Bakery.Models
     private int _pastryPrice;
     private int _pastryQuantity;
 
-    public int PastryQuantity 
+    public int PastryOrder
     {
       get 
       { 
