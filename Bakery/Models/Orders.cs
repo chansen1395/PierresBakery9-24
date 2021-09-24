@@ -11,18 +11,14 @@ namespace Bakery.Models
 
     public int BreadQuantity 
     {
-      // get { return _breadPrice; }
       get 
       { 
         _breadPrice = 0;
-        // _breadPrice = _breadQuantity * 5;
-        // Console.WriteLine(_breadQuantity);
         for (int i = 1; i <= _breadQuantity; i++)
         {
           if (i % 3 != 0)
           {
             _breadPrice += 5;
-            // Console.WriteLine(_breadPrice);
           }
         }
         return _breadPrice;
@@ -35,16 +31,44 @@ namespace Bakery.Models
   public class Pastry
   {
     private int _pastryPrice;
+    private int _pastryQuantity;
 
-    public int PastryPrice 
+    public int PastryQuantity 
     {
-      get { return _pastryPrice; }
-      // get 
-      // { 
-      //   if   
-      // }
-      set { _pastryPrice = value; }
+      get 
+      { 
+        _pastryPrice = 0;
+        for (int i = 1; i <= _pastryQuantity; i++)
+        {
+          if (i % 3 != 0)
+          {
+            _pastryPrice += 2;
+          }
+          else
+          {
+            _pastryPrice += 1;
+          }
+        }
+        return _pastryPrice;
+      }
+      set { _pastryQuantity = value; }
     }
     
   }
+
+  // public class Pastry
+  // {
+  //   private int _pastryPrice;
+
+  //   public int PastryPrice 
+  //   {
+  //     get { return _pastryPrice; }
+  //     // get 
+  //     // { 
+  //     //   if   
+  //     // }
+  //     set { _pastryPrice = value; }
+  //   }
+    
+  // }
 }

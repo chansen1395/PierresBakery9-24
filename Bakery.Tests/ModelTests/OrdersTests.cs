@@ -45,12 +45,20 @@ namespace Bakery.Tests
   [TestClass]
   public class PastryTests
   {
+    // [TestMethod]
+    // public void Pastry_CheckPrice_1()
+    // {
+    //   Pastry orderPastry = new Pastry();
+    //   orderPastry.PastryPrice = 1;
+    //   Assert.AreEqual(1, orderPastry.PastryPrice);
+    // }
+
     [TestMethod]
-    public void Pastry_CheckPrice_1()
+    public void Pastry_PriceCalc_5()
     {
       Pastry orderPastry = new Pastry();
-      orderPastry.PastryPrice = 1;
-      Assert.AreEqual(1, orderPastry.PastryPrice);
+      orderPastry.PastryQuantity = 3;
+      Assert.AreEqual(5, orderPastry.PastryQuantity);
     }
 
   }
