@@ -8,12 +8,20 @@ namespace Bakery.Tests
   [TestClass]
   public class BreadTests
   {
+    // [TestMethod]
+    // public void Bread_CheckPrice_1()
+    // {
+    //   Bread orderBread = new Bread();
+    //   orderBread.BreadPrice = 1;
+    //   Assert.AreEqual(1, orderBread.BreadPrice);
+    // }
+
     [TestMethod]
-    public void Bread_CheckPrice_1()
+    public void Bread_PriceCalc_1()
     {
       Bread orderBread = new Bread();
-      orderBread.BreadPrice = 1;
-      Assert.AreEqual(1, orderBread.BreadPrice);
+      orderBread.BreadQuantity = 1;
+      Assert.AreEqual(5, orderBread.BreadQuantity);
     }
 
   }

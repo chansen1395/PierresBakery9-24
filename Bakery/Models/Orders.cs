@@ -7,15 +7,17 @@ namespace Bakery.Models
   public class Bread
   {
     private int _breadPrice;
+    private int _breadQuantity;
 
-    public int BreadPrice 
+    public int BreadQuantity 
     {
-      get { return _breadPrice; }
-      // get 
-      // { 
-      //   if   
-      // }
-      set { _breadPrice = value; }
+      // get { return _breadPrice; }
+      get 
+      { 
+        _breadPrice = _breadQuantity * 5;
+        return _breadPrice;
+      }
+      set { _breadQuantity = value; }
     }
     
   }
