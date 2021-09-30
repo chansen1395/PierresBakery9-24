@@ -5,29 +5,29 @@ namespace Bakery.Models
 {
   public class Pastry
   {
-    private int _pastryPrice;
-    private int _pastryQuantity;
+    public int PastryPrice { get; set; }
+    public int PastryQuantity { get; set; }
 
-    // Determine Pastry price, every 3rd Pastry is $1
-    public int PastryOrder
+    public Pastry(int pastryQuantity)
     {
-      get 
-      { 
-        _pastryPrice = 0;
-        for (int i = 1; i <= _pastryQuantity; i++)
+      PastryQuantity = pastryQuantity;
+      PastryPrice = 0;
+    }
+
+    public int PastryCost()
+    {
+      for (int i = 1; i <= PastryQuantity; i++)
+      {
+        if (i % 3 != 0)
         {
-          if (i % 3 != 0)
-          {
-            _pastryPrice += 2;
-          }
-          else
-          {
-            _pastryPrice += 1;
-          }
+          PastryPrice += 2;
         }
-        return _pastryPrice;
+        else
+        {
+          PastryPrice += 1;
+        }
       }
-      set { _pastryQuantity = value; }
+      return PastryPrice;
     }
   }
 }
